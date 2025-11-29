@@ -1,0 +1,122 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://canadapooch.com/cdn/shop/articles/Blog_DesktopBanner_TrueNorthParka_1400x.jpg?v=1608051774",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Paw Balm Treatment",
+    "providerName": "FrostyPaws Clinic",
+    "providerEmail": "care@frostypaws.com",
+    "price": 18,
+    "rating": 4.7,
+    "slotsAvailable": 6,
+    "description": "Protective balm application to prevent cracking and irritation from icy sidewalks and salt.",
+    "image": "https://wildfordogs.co.uk/cdn/shop/products/CloudBalmNosePawandSkinTreatment7.jpg?v=1689885693&width=1080",
+    "category": "Wellness"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Winter Grooming Package",
+    "providerName": "SnowTail Spa",
+    "providerEmail": "hello@snowtailspa.com",
+    "price": 40,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Seasonal grooming with warm baths, coat trimming, and skin hydration.",
+    "image": "https://pawspace.in/wp-content/uploads/2023/11/Dog-Grooming-in-Bangalore-JPG-scaled.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Heated Bed Setup",
+    "providerName": "WarmNest Pets",
+    "providerEmail": "support@warmnest.com",
+    "price": 35,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Installation of heated pet beds and thermal pads for cozy winter nights.",
+    "image": "https://www.akc.org/wp-content/uploads/2018/02/Heated-Dog-Bed-Dachshund.jpg",
+    "category": "Comfort"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Winter Nutrition Consultation",
+    "providerName": "HealthyTail Vets",
+    "providerEmail": "nutrition@healthytail.com",
+    "price": 30,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Personalized diet plans to boost immunity and energy during cold months.",
+    "image": "https://cdn.shopify.com/s/files/1/0565/8021/0861/t/617/assets/img-2-16-1704001545484.jpg?v=1704001546",
+    "category": "Nutrition"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Snow Walk Safety Training",
+    "providerName": "PawSteps Academy",
+    "providerEmail": "train@pawsteps.com",
+    "price": 22,
+    "rating": 4.5,
+    "slotsAvailable": 7,
+    "description": "Training sessions to help pets walk safely on snow and ice.",
+    "image": "https://www.adventurecats.org/wp-content/uploads/2017/06/Jasper-4.1.jpg",
+    "category": "Training"
+  },
+  {
+    "serviceId": 7,
+    "serviceName": "Winter Allergy Checkup",
+    "providerName": "VetCare Hub",
+    "providerEmail": "contact@vetcarehub.com",
+    "price": 28,
+    "rating": 4.6,
+    "slotsAvailable": 4,
+    "description": "Comprehensive checkup for seasonal allergies and respiratory issues.",
+    "image": "https://plus.unsplash.com/premium_photo-1663012999448-7f5ec5324f4e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fFdpbnRlciUyMEFsbGVyZ3klMjBDaGVja3VwJTIwZG9nfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
+    "category": "Health"
+  },
+  {
+    "serviceId": 8,
+    "serviceName": "Holiday Pet Photoshoot",
+    "providerName": "FurFrame Studio",
+    "providerEmail": "studio@furframe.com",
+    "price": 45,
+    "rating": 5.0,
+    "slotsAvailable": 3,
+    "description": "Festive photoshoot with winter props and cozy backdrops.",
+    "image": "https://media.istockphoto.com/id/1443043968/photo/lots-of-dogs-thoroughbred-collection-of-dogs-pet-friends.jpg?s=2048x2048&w=is&k=20&c=zfmOfv-N67jbE1Xyd0tfHutTTufs2tysnnoyNHFXqRI=",
+    "category": "Photography"
+  },
+  {
+    "serviceId": 9,
+    "serviceName": "Winter Toy Bundle",
+    "providerName": "PlayPaws Market",
+    "providerEmail": "sales@playpaws.com",
+    "price": 20,
+    "rating": 4.4,
+    "slotsAvailable": 10,
+    "description": "Bundle of chew toys and puzzles designed for indoor winter play.",
+    "image": "https://images.unsplash.com/photo-1706697267467-d628942c35b0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fFdpbnRlciUyMFRveSUyMEJ1bmRsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
+    "category": "Toys"
+  },
+  {
+    "serviceId": 10,
+    "serviceName": "Senior Pet Winter Check",
+    "providerName": "GoldenTail Vets",
+    "providerEmail": "care@goldentail.com",
+    "price": 32,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Specialized winter health check for senior pets including joint care and warmth tips.",
+    "image": "https://images.unsplash.com/photo-1708905067346-9942b5e898a0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFNlbmlvciUyMFBldCUyMFdpbnRlciUyMENoZWNrfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
+    "category": "Senior Care"
+  }
+]
