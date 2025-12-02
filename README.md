@@ -49,6 +49,9 @@ Built with modern tools from the React ecosystem:
 - Service Details *(with photo album)*  
 - My Profile *(Private)*  
 - Sign In / Sign Up  
+- Gallery
+- Contact
+- About
 - Forgot Password  
 - Error Page  
 
