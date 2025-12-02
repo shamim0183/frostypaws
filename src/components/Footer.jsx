@@ -1,15 +1,14 @@
-import React from "react"
-import { Link } from "react-router"
 import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaGithub,
-  FaEnvelope,
-  FaPhoneAlt,
-  FaMapMarkerAlt,
+    FaEnvelope,
+    FaFacebookF,
+    FaInstagram,
+    FaLinkedin,
+    FaMapMarkerAlt,
+    FaPhoneAlt,
+    FaTwitter,
 } from "react-icons/fa"
-import MyContainer from "./MyContainer";
+import { Link } from "react-router"
+import MyContainer from "./MyContainer"
 
 const Footer = () => {
   return (
@@ -24,19 +23,19 @@ const Footer = () => {
           <div className="space-y-2 text-sm">
             <p className="flex items-center gap-2">
               <FaEnvelope className="text-accent" />
-              <Link to="/contact/email" className="link">
+              <Link to="/contact" className="link">
                 support@fostypaws.com
               </Link>
             </p>
             <p className="flex items-center gap-2">
               <FaPhoneAlt className="text-accent" />
-              <Link to="/contact/phone" className="link">
+              <Link to="/contact" className="link">
                 +880-1234-567890
               </Link>
             </p>
             <p className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-accent" />
-              <Link to="/contact/location" className="link">
+              <Link to="/contact" className="link">
                 Dhaka, Bangladesh
               </Link>
             </p>
@@ -63,13 +62,8 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/privacy-policy" className="link link-hover">
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link to="/terms" className="link link-hover">
-                Terms of Service
+              <Link to="/services" className="link link-hover">
+                Services
               </Link>
             </li>
           </ul>
@@ -79,18 +73,42 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
           <div className="flex gap-4 text-xl text-accent">
-            <Link to="/social/facebook" className="hover:text-primary">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+              aria-label="Facebook"
+            >
               <FaFacebookF />
-            </Link>
-            <Link to="/social/instagram" className="hover:text-primary">
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+              aria-label="Instagram"
+            >
               <FaInstagram />
-            </Link>
-            <Link to="/social/twitter" className="hover:text-primary">
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+              aria-label="Twitter"
+            >
               <FaTwitter />
-            </Link>
-            <Link to="/social/github" className="hover:text-primary">
-              <FaGithub />
-            </Link>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
           </div>
         </div>
       </MyContainer>

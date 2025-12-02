@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react"
+import "animate.css"
+import { useEffect, useState } from "react"
 import { Link, useLoaderData } from "react-router"
-import MyContainer from "../components/MyContainer"
-import WinterCareTips from "../components/WinterCareTips"
 import ExtraSections from "../components/ExtraSections"
+import HeroSlider from "../components/HeroSlider"
+import MyContainer from "../components/MyContainer"
+import WinterCareTestimonials from "../components/WinterCareTestimonials.jsx"
 import WinterServiceCard from "../components/WinterServiceCard"
 import WinterServiceSkeleton from "../components/WinterServiceSkeleton"
-import HeroSlider from "../components/HeroSlider"
-import "animate.css"
-import WinterCareTestimonials from "../components/WinterCareTestimonials.jsx";
 
 
 const Home = () => {
@@ -39,7 +38,7 @@ const Home = () => {
           </p>
         </section>
 
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {loading
             ? Array.from({ length: 6 }).map((_, i) => (
                 <WinterServiceSkeleton key={i} />

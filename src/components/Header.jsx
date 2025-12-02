@@ -1,14 +1,22 @@
-import React, { useContext, useState } from "react"
-import MyLink from "./MyLink"
-import { AuthContext } from "../context/AuthContext"
-import MyContainer from "./MyContainer"
-import { Link, useNavigate } from "react-router"
-import "animate.css"
+import "animate.css";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router";
+import { AuthContext } from "../context/AuthContext";
+import MyContainer from "./MyContainer";
+import MyLink from "./MyLink";
 
 
-const navLinks = [
+// Public navigation links (visible to everyone)
+const publicNavLinks = [
   { label: "Home", to: "/" },
   { label: "Services", to: "/services" },
+  { label: "Gallery", to: "/gallery" },
+  { label: "About Us", to: "/about" },
+  { label: "Contact", to: "/contact" },
+]
+
+// Private navigation links (only visible when logged in)
+const privateNavLinks = [
   { label: "My Profile", to: "/my-profile" },
 ]
 
@@ -48,7 +56,14 @@ const Header = () => {
               tabIndex={-1}
               className="menu menu-sm dropdown-content mt-3 z-1 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              {navLinks.map(({ label, to }) => (
+              {/* Public links - always visible */}
+              {publicNavLinks.map(({ label, to }) => (
+                <li key={label}>
+                  <MyLink to={to}>{label}</MyLink>
+                </li>
+              ))}
+              {/* Private links - only visible when logged in */}
+              {user && privateNavLinks.map(({ label, to }) => (
                 <li key={label}>
                   <MyLink to={to}>{label}</MyLink>
                 </li>
@@ -66,7 +81,14 @@ const Header = () => {
         {/* Center: Desktop Nav */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 flex gap-4 items-center">
-            {navLinks.map(({ label, to }) => (
+            {/* Public links - always visible */}
+            {publicNavLinks.map(({ label, to }) => (
+              <li key={label}>
+                <MyLink to={to}>{label}</MyLink>
+              </li>
+            ))}
+            {/* Private links - only visible when logged in */}
+            {user && privateNavLinks.map(({ label, to }) => (
               <li key={label}>
                 <MyLink to={to}>{label}</MyLink>
               </li>

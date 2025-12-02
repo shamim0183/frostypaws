@@ -1,15 +1,18 @@
 import { createBrowserRouter } from "react-router"
-import Home from "../pages/Home"
-import HomeLayout from "../layouts/HomeLayout"
-import Services from "../pages/Services"
-import MyProfile from "../pages/MyProfile"
 import AuthLayout from "../layouts/AuthLayout"
+import HomeLayout from "../layouts/HomeLayout"
+import About from "../pages/About"
+import Contact from "../pages/Contact"
+import ForgotPassword from "../pages/ForgotPassword"
+import Gallery from "../pages/Gallery"
+import Home from "../pages/Home"
+import MyProfile from "../pages/MyProfile"
+import NotFound from "../pages/NotFound"
+import ServiceDetails from "../pages/ServiceDetails"
+import Services from "../pages/Services"
 import SignIn from "../pages/SignIn"
 import SignUp from "../pages/SignUp"
-import ForgotPassword from "../pages/ForgotPassword"
 import PrivateRoute from "../provider/PrivateRoute"
-import ServiceDetails from "../pages/ServiceDetails"
-import NotFound from "../pages/NotFound"
 
 const router = createBrowserRouter([
   {
@@ -27,6 +30,18 @@ const router = createBrowserRouter([
         loader: () => fetch("/popularServices.json"),
       },
       {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
+      },
+      {
         path: "/my-profile",
         element: (
           <PrivateRoute>
@@ -36,11 +51,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/service-details/:id",
-        element: (
-          <PrivateRoute>
-            <ServiceDetails />
-          </PrivateRoute>
-        ),
+        element: <ServiceDetails />,
         loader: () => fetch("/popularServices.json"),
       },
 

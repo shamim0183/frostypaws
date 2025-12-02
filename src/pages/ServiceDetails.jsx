@@ -1,20 +1,20 @@
-import React, { useContext, useEffect, useState } from "react"
-import {
-  useParams,
-  useNavigate,
-  useLocation,
-  useLoaderData,
-} from "react-router"
-import { AuthContext } from "../context/AuthContext"
-import { toast } from "react-toastify"
-import MyContainer from "../components/MyContainer"
-import { FaStar, FaCheckCircle } from "react-icons/fa"
-import ServiceNotFound from "../components/ServiceNotFound"
-import PhotoAlbum from "react-photo-album"
-import "react-photo-album/styles.css"
+import "animate.css"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import "animate.css"
+import { useContext, useEffect, useState } from "react"
+import { FaCheckCircle, FaStar } from "react-icons/fa"
+import PhotoAlbum from "react-photo-album"
+import "react-photo-album/styles.css"
+import {
+    useLoaderData,
+    useLocation,
+    useNavigate,
+    useParams,
+} from "react-router"
+import { toast } from "react-toastify"
+import MyContainer from "../components/MyContainer"
+import ServiceNotFound from "../components/ServiceNotFound"
+import { AuthContext } from "../context/AuthContext"
 
 const ServiceDetails = () => {
   const { id } = useParams()
@@ -30,12 +30,6 @@ const ServiceDetails = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true })
   }, [])
-
-  useEffect(() => {
-    if (!loading && !user) {
-      navigate("/auth/signin", { state: { from: `/services/${id}` } })
-    }
-  }, [user, loading, id, navigate])
 
   if (loading) {
     return (
