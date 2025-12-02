@@ -1,19 +1,19 @@
-import React, { useContext, useState, useEffect } from "react"
-import { AuthContext } from "../context/AuthContext"
-import { updateProfile } from "firebase/auth"
-import { toast } from "react-toastify"
-import {
-  FaUserEdit,
-  FaSave,
-  FaTimes,
-  FaPaw,
-  FaCalendarAlt,
-  FaCog,
-} from "react-icons/fa"
+import "animate.css"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import "animate.css"
+import { updateProfile } from "firebase/auth"
+import { useContext, useEffect, useState } from "react"
+import {
+  FaCalendarAlt,
+  FaCog,
+  FaPaw,
+  FaSave,
+  FaTimes,
+  FaUserEdit,
+} from "react-icons/fa"
+import { toast } from "react-toastify"
 import MyContainer from "../components/MyContainer"
+import { AuthContext } from "../context/AuthContext"
 
 const MyProfile = () => {
   const { user, setUser } = useContext(AuthContext)
@@ -79,19 +79,17 @@ const MyProfile = () => {
     })
   }
 
-
   return (
-    <section className="bg-linear-to-br from-[#e0f7fa] to-[#f0f4ff] py-16 min-h-screen text-gray-800">
+    <section className="bg-linear-to-br from-[#e0f7fa] to-[#f0f4ff] py-16 min-h-screen text-gray-800 md:mt-16">
       <title>FostyPaws | My Profile</title>
       <MyContainer>
         <div
           className="bg-white/60 backdrop-blur-md shadow-xl rounded-xl p-8 max-w-2xl mx-auto border border-white/30"
           data-aos="fade-up"
         >
-
           <div className="flex flex-col items-center space-y-6">
             <div className="avatar animate__animated animate__fadeInDown">
-              <div className="w-28 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2 overflow-hidden">
+              <div className="w-28 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2  ">
                 <img
                   src={photoURL || "/default-avatar.png"}
                   alt="User Avatar"

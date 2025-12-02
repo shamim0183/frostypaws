@@ -64,7 +64,7 @@ const Services = () => {
   const displayedServices = getFilteredAndSortedServices()
 
   return (
-    <section className="py-16 bg-base-100 min-h-screen">
+    <section className="py-16 bg-base-100 min-h-screen pt-40">
       <title>Winter Care Services</title>
       <MyContainer>
         <div className="text-center mb-8">
@@ -83,7 +83,7 @@ const Services = () => {
 
         {/* Filter and Sort Controls */}
         <div
-          className="bg-white/80 backdrop-blur-md p-6 rounded-xl shadow-md border border-white/30 mb-8"
+          className="bg-white/80 backdrop-blur-md p-6 rounded-xl overflow-hidden shadow-md border border-white/30 mb-8"
           data-aos="fade-up"
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

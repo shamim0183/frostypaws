@@ -63,9 +63,9 @@ const Contact = () => {
   ]
 
   return (
-    <div className="bg-base-100 min-h-screen">
+    <div className="bg-base-100 min-h-screen ">
       {/* Hero Section */}
-      <section className="bg-linear-to-br from-[#f0f4ff] to-[#e0f7fa] py-20">
+      <section className="bg-linear-to-br from-[#f0f4ff] to-[#e0f7fa] py-20 pt-40">
         <MyContainer>
           <div className="text-center max-w-3xl mx-auto" data-aos="fade-up">
             <h1 className="text-5xl font-bold gradient-text mb-6">

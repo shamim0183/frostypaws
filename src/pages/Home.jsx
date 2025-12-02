@@ -21,7 +21,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="bg-base-100 text-neutral min-h-screen mt-12">
+    <div className="bg-base-100 text-neutral min-h-screen pt-20 md:pt-40">
       <MyContainer>
         <HeroSlider />
 

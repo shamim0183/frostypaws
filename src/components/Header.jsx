@@ -1,10 +1,9 @@
-import "animate.css";
-import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router";
-import { AuthContext } from "../context/AuthContext";
-import MyContainer from "./MyContainer";
-import MyLink from "./MyLink";
-
+import "animate.css"
+import { useContext, useState } from "react"
+import { Link, useNavigate } from "react-router"
+import { AuthContext } from "../context/AuthContext"
+import MyContainer from "./MyContainer"
+import MyLink from "./MyLink"
 
 // Public navigation links (visible to everyone)
 const publicNavLinks = [
@@ -16,9 +15,7 @@ const publicNavLinks = [
 ]
 
 // Private navigation links (only visible when logged in)
-const privateNavLinks = [
-  { label: "My Profile", to: "/my-profile" },
-]
+const privateNavLinks = [{ label: "My Profile", to: "/my-profile" }]
 
 const Header = () => {
   const { user, logout, loading } = useContext(AuthContext)
@@ -31,7 +28,7 @@ const Header = () => {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-base-100 shadow-sm">
+    <header className="fixed w-full flex items-center top-0 z-50 bg-base-100 shadow-sm backdrop-blur-md">
       <MyContainer className="navbar px-4 flex items-center justify-between">
         {/* Left: Logo + Mobile Dropdown */}
         <div className="navbar-start">
@@ -63,11 +60,12 @@ const Header = () => {
                 </li>
               ))}
               {/* Private links - only visible when logged in */}
-              {user && privateNavLinks.map(({ label, to }) => (
-                <li key={label}>
-                  <MyLink to={to}>{label}</MyLink>
-                </li>
-              ))}
+              {user &&
+                privateNavLinks.map(({ label, to }) => (
+                  <li key={label}>
+                    <MyLink to={to}>{label}</MyLink>
+                  </li>
+                ))}
             </ul>
           </div>
           <Link
@@ -88,11 +86,12 @@ const Header = () => {
               </li>
             ))}
             {/* Private links - only visible when logged in */}
-            {user && privateNavLinks.map(({ label, to }) => (
-              <li key={label}>
-                <MyLink to={to}>{label}</MyLink>
-              </li>
-            ))}
+            {user &&
+              privateNavLinks.map(({ label, to }) => (
+                <li key={label}>
+                  <MyLink to={to}>{label}</MyLink>
+                </li>
+              ))}
           </ul>
         </div>
 

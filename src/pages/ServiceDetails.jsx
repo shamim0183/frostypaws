@@ -149,7 +149,7 @@ const ServiceDetails = () => {
   ]
 
   return (
-    <section className="bg-[#fefefe] text-gray-800">
+    <section className="bg-[#fefefe] text-gray-800 pt-16 md:pt-16">
       <title>{service.serviceName}</title>
       {/* Hero Section */}
       <div className="bg-linear-to-br from-[#f0f4ff] to-[#e0f7fa] py-16">

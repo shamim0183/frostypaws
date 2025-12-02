@@ -321,15 +321,13 @@ const Gallery = () => {
   ]
 
   return (
-    <div className="bg-base-100 min-h-screen">
+    <div className="bg-base-100 min-h-screen  ">
       {/* Hero Section */}
-      <section className="bg-linear-to-br from-[#f0f4ff] to-[#e0f7fa] py-20">
+      <section className="bg-linear-to-br from-[#f0f4ff] to-[#e0f7fa] py-20 pt-40">
         <MyContainer>
           <div className="text-center max-w-3xl mx-auto" data-aos="fade-up">
             <div className="flex items-center justify-center gap-3 mb-6">
-              <h1 className="text-5xl font-bold gradient-text">
-                Our Gallery
-              </h1>
+              <h1 className="text-5xl font-bold gradient-text">Our Gallery</h1>
               <FaCamera className="text-5xl text-accent" />
             </div>
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -377,7 +375,8 @@ const Gallery = () => {
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Every photo tells a story of care, warmth, and happiness. Browse
-              through our collection of 50+ beautiful moments featuring dogs, cats, rabbits, birds, hamsters, fish, reptiles, and more!
+              through our collection of 50+ beautiful moments featuring dogs,
+              cats, rabbits, birds, hamsters, fish, reptiles, and more!
             </p>
           </div>
           <div className="px-4 sm:px-6 lg:px-8" data-aos="fade-up">
@@ -419,16 +418,10 @@ const Gallery = () => {
               along the way!
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <a
-                href="/services"
-                className="btn btn-accent text-white px-8"
-              >
+              <a href="/services" className="btn btn-accent text-white px-8">
                 Browse Services
               </a>
-              <a
-                href="/contact"
-                className="btn btn-outline btn-accent px-8"
-              >
+              <a href="/contact" className="btn btn-outline btn-accent px-8">
                 Contact Us
               </a>
             </div>
